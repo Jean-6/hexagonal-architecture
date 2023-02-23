@@ -1,17 +1,16 @@
 package domain.model;
 
-import lombok.Builder;
-import lombok.Value;
-import lombok.With;
+import lombok.*;
 
 import java.util.UUID;
 
 @Builder
 @Value
+@Data
 public class Offer {
     @With
-    private final UUID id;
-    private final String taskDescription;
+    private UUID id;
+    private String taskDescription;
 
 
 }

@@ -1,4 +1,4 @@
-package domain.port;
+package domain.port.in;
 
 import domain.model.Client;
 import domain.model.Offer;

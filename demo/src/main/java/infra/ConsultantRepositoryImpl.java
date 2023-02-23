@@ -1,12 +1,12 @@
 package infra;
 
 import domain.model.Skill;
-import domain.port.IConsultantRepository;
+import domain.port.out.ConsultantRepository;
 import org.springframework.stereotype.Service;
 
 
 @Service
-public class ConsultantRepositoryImpl implements IConsultantRepository {
+public class ConsultantRepositoryImpl implements ConsultantRepository {
     @Override
     public void updateAverageDailyRate(float averageDailyRate) {
 

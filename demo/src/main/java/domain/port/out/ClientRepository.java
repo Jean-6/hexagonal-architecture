@@ -1,10 +1,10 @@
-package domain.port;
+package domain.port.out;
 
 import domain.model.Client;
 
 import java.util.List;
 
-public interface IClientRepository {
+public interface ClientRepository {
 
     public void createClient(Client client);
 

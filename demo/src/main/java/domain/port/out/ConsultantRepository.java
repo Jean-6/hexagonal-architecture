@@ -1,8 +1,8 @@
-package domain.port;
+package domain.port.out;
 
 import domain.model.Skill;
 
-public interface IConsultantRepository {
+public interface ConsultantRepository {
 
     public void updateAverageDailyRate(float averageDailyRate);
 

@@ -1,18 +1,20 @@
 package domain.model;
 
-import lombok.Builder;
-import lombok.Value;
-import lombok.With;
+import lombok.*;
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 @Builder
 @Value
+@Data
 public class Client {
     @With
-    private final UUID id;
-    private final String name;
-    private final String firstName;
-    private final Offer offer ;
+    private UUID id;
+    private  String name;
+    private String firstName;
+    private ArrayList<Offer> offer ;
+
+
 
 }
