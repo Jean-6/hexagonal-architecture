@@ -1,7 +1,5 @@
 package domain.model;
-
 import lombok.*;
-
 import java.util.UUID;
 
 @Builder
