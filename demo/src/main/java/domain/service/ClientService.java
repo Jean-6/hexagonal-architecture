@@ -13,3 +13,13 @@ public interface ClientService {
 
     public List<Client> listClient();
 }
+
+/*
+public interface ClientRestUI {
+    @PostMapping
+    void createClient(@RequestBody Client client);
+    @GetMapping("/{uuid}")
+    public Client getClient(@PathVariable UUID id);
+}
+/*@GetMapping public List<Client> listClient();
+ */

@@ -2,14 +2,19 @@ package domain.port.in;
 
 import domain.model.Client;
 import domain.model.Offer;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
 import java.util.UUID;
 
-public interface OfferRestUI {
+public interface OfferService {
+    public void createOffer(String taskDescription);
+
+    public Offer getOffer(UUID offerId);
+
+    public List<Offer> offerList();
+}
+/*
+public interface OfferService {
 
     @PostMapping
     void createOffer(@RequestBody String description);
@@ -19,3 +24,5 @@ public interface OfferRestUI {
     void addOffer(@RequestBody Offer offer, @RequestBody UUID clientId);
 
 }
+
+ */

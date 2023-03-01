@@ -3,10 +3,12 @@ package app;
 import domain.model.Offer;
 import domain.port.in.OfferRestUI;
 import domain.port.in.OfferService;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
-public class OfferRestController implements OfferRestUI {
+@RestController("/offer")
+public class OfferController implements OfferRestUI {
 
     private OfferService offerService;
     @Override

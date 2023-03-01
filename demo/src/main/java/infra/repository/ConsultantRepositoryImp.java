@@ -1,4 +1,4 @@
-package infra.re;
+package infra.repository;
 
 import domain.model.Skill;
 import org.springframework.stereotype.Service;

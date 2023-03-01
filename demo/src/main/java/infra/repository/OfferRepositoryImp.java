@@ -1,4 +1,4 @@
-package infra.re;
+package infra.repository;
 
 public class OfferRepositoryImp {
 

@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
-@RestController
-@RequestMapping("/client")
-public class ClientRestController implements ClientRestUI {
+@RestController("/client")
+//@RequestMapping("/client")
+public class ClientController implements ClientRestUI {
     @Autowired
     private ClientService clientService;
 

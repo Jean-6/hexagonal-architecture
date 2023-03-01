@@ -24,6 +24,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -52,7 +57,36 @@
         </dependency>
 
 
-    </dependencies>
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+		<!--<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.11</version>
+		</dependency>
+		<dependency>
+			<groupId>mongo-driver-3</groupId>
+			<artifactId>mongo-driver-3</artifactId>
+			<version>0.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.leancloud</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.3.0-query-log-max-size</version>
+		</dependency>
+
+		-->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>bson</artifactId>
+			<version>4.8.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<plugins>
@@ -62,5 +96,12 @@
 			</plugin>
 		</plugins>
 	</build>
+    <repositories>
+        <repository>
+            <id>clojars</id>
+            <name>Clojars</name>
+            <url>https://repo.clojars.org/</url>
+        </repository>
+    </repositories>
 
 </project>
