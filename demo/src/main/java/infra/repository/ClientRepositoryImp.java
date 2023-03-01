@@ -1,13 +1,12 @@
-package infra;
+package infra.re;
 
 import domain.model.Client;
-import domain.port.out.ClientRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ClientRepositoryImpl implements ClientRepository {
+public class ClientRepositoryImp implements domain.port.out.ClientRepository {
     @Override
     public void createClient(Client client) {
 
